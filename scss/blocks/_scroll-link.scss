@@ -1,0 +1,35 @@
+.scroll-link {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__text {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: $color-bright-grey;
+  }
+
+  &__icon {
+    color: $color-coral;
+    width: 33px;
+    height: 17px;
+    animation: scrollAnim 1s linear infinite alternate;
+  }
+}
+
+@keyframes scrollAnim {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

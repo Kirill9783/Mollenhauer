@@ -1,0 +1,104 @@
+.thumbs-slider {
+
+  &__slide {
+    position: relative;
+    min-height: 156px;
+    max-width: 180px;
+    counter-increment: thumb-btn 1;
+    transition: opacity 0.3s linear;
+
+    &:first-child {
+      min-width: 270px;
+
+      @media (max-width: 1024px) {
+        min-width: auto;
+      }
+    }
+
+    &:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 80%;
+      transform: translateY(10%);
+      background: url("/images/benefit/benefit-line.png") right top / auto 100% no-repeat;
+    }
+
+    &-btn {
+      border: none;
+      background-color: transparent;
+      color: inherit;
+      cursor: pointer;
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 17px;
+      opacity: 0.5;
+      transition: opacity $transition-300;
+
+      &:hover,
+      &:focus-visible {
+        opacity: 1;
+      }
+      
+      @media (max-width: 1290px) {
+        padding: 12px;
+      }
+    }
+
+    &-num {
+      position: relative;
+      width: 40px;
+      height: 32px;
+      margin: 0 0 21px;
+
+      &::before {
+        content: counter(thumb-btn);
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 800;
+        font-size: 17px;
+        letter-spacing: 0.02em;
+        color: $color-ebony;
+        transition: color $transition-300;
+
+        @media (max-width: 1024px) {
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+      color: $color-ebony;
+      position: absolute;
+      top: 17px;
+      right: 0;
+      transition: color $transition-300;
+
+      @media (max-width: 1024px) {
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+    &-title {
+      text-align: left;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: -0.05em;
+      line-height: 85%;
+      color: $color-ebony;
+
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

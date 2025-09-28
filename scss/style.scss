@@ -1,0 +1,32 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_header";
+@import "blocks/_hero";
+@import "blocks/_main-nav";
+@import "blocks/_lang";
+@import "blocks/_btn";
+@import "blocks/_burger";
+@import "blocks/_mobile-menu";
+@import "blocks/_privacy";
+@import "blocks/_services";
+@import "blocks/_decor-block";
+@import "blocks/scroll-link";
+@import "blocks/_expertise";
+@import "blocks/_expert-block";
+@import "blocks/_benefit";
+@import "blocks/_navigation";
+@import "blocks/_swiper";
+@import "blocks/_slider-block";
+@import "blocks/_thumbs-slider";
+@import "blocks/_thumbs-nav";
+@import "blocks/_main-slider";
+@import "blocks/_players";

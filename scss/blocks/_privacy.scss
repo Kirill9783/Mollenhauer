@@ -1,0 +1,26 @@
+.privacy {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: auto 0 0;
+
+  &__link {
+    font-size: 12px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    color: $color-white;
+    outline: none;
+    transition: color $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-sapphire;
+    }
+  }
+
+  &__line {
+    width: 2px;
+    height: 15px;
+    background-color: $color-white;
+  }
+}

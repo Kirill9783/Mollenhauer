@@ -1,0 +1,44 @@
+.thumbs-nav {
+  display: flex;
+  width: 35%;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  &__btn {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0;
+    outline: none;
+    width: 71px;
+    height: 71px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    transition: background-color $transition-300;
+
+    &--next {
+      background-color: $color-chocolate;
+
+      &:hover,
+      &:focus-visible {
+        background-color: $color-rust;
+      }
+    }
+
+    &--prev {
+      background-color: $color-sapphire;
+
+      &:hover,
+      &:focus-visible {
+        background-color: $color-endeavour;
+      }
+    }
+  }
+}

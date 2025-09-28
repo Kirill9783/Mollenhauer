@@ -1,0 +1,58 @@
+.expertise {
+  padding: 140px 0 10px;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    max-width: 461px;
+    align-self: center;
+    text-align: center;
+    margin: 0 0 50px;
+
+    @media (max-width: 1024px) {
+      margin: 0 0 40px;
+    }
+
+    @media (max-width: 420px) {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: $color-black;
+
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 28px;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: $color-regent-grey;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  &__swiper-pagination {
+    margin: 0 0 -50px;
+  }
+}

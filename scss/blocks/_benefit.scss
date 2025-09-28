@@ -1,0 +1,66 @@
+.benefit {
+  padding: 168px 0 88px;
+  position: relative;
+  z-index: 2;
+  
+  @media (max-width: 490px) {
+    padding: 70px 0 50px;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 85px;
+    gap: 100px;
+    
+    @media (max-width: 1024px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template: repeat(2, auto) / 1fr;
+    }
+  }
+
+  &__title {
+    color: $color-black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin: 0;
+
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 28px;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__description {
+    color: $color-regent-grey;
+    columns: 2;
+    text-align: justify;
+    gap: 30px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 490px) {
+      columns: 1;
+    }
+  }
+}

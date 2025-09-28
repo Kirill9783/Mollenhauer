@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Описание">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" defer src="js/index.js"></script>
+    <title>Mollenhauer</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <span class="header__logo-icon">
+                <svg class="header__icon" width="263" height="46" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#logo-icon"></use>
+                </svg>
+            </span>
+            <div class="header__main-nav main-nav main-nav--mobile">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Services</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Know How</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Projects & References</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Our Company</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Our Clients</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <button class="header__btn btn btn--contact">
+                    Contact Us
+                </button>
+                <div class="header__lang-list lang lang--mobile">
+                    <ul class="lang__list">
+                        <li class="lang__item">
+                            <a class="lang__link" href="#" aria-label="Switch to German">
+                                <svg class="lang__icon" width="12" height="12" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#de-icon"></use>
+                                </svg>
+                                <span class="lang__name">De</span>
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="lang__link lang__link--active" href="#" aria-label="Switch to English">
+                                <svg class="lang__icon" width="12" height="12" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#en-icon"></use>
+                                </svg>
+                                <span class="lang__name">En</span>
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="lang__link" href="#" aria-label="Switch to  French">
+                                <svg class="lang__icon" width="12" height="12" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#fr-icon"></use>
+                                </svg>
+                                <span class="lang__name">Fr</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__burger">
+                    <button class="header__burger-btn burger" type="button" aria-label="Open Menu">
+                        <span class="burger__menu"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__mobile-menu mobile-menu">
+                <div class="mobile-menu__lang-list lang lang--mobile">
+                    <ul class="lang__list">
+                        <li class="lang__item">
+                            <a class="lang__link" href="#" aria-label="Switch to German">
+                                <svg class="lang__icon" width="12" height="12" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#de-icon"></use>
+                                </svg>
+                                <span class="lang__name">De</span>
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="lang__link lang__link--active" href="#" aria-label="Switch to English">
+                                <svg class="lang__icon" width="12" height="12" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#en-icon"></use>
+                                </svg>
+                                <span class="lang__name">En</span>
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="lang__link" href="#" aria-label="Switch to  French">
+                                <svg class="lang__icon" width="12" height="12" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#fr-icon"></use>
+                                </svg>
+                                <span class="lang__name">Fr</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__main-nav main-nav main-nav--mobile">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Services</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Know How</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Projects & References</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Our Company</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Our Clients</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="mobile-menu__btn btn btn--contact">
+                    Contact Us
+                </button>
+                <div class="mobile-menu__privacy privacy">
+                    <a class="privacy__link" href="#">Imprint</a>
+                    <span class="privacy__line"></span>
+                    <a class="privacy__link" href="#">Data privacy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__picture">
+                    <picture>
+                        <source type="image/webp"
+                                srcset="images/hero/hero-gradient-img.webp 1x, images/hero/hero-gradient-img@2x.webp 2x">
+                        <img class="hero__img" src="images/hero/hero-gradient-img.jpg"
+                             srcset="images/hero/hero-gradient-img@2x.jpg 2x"
+                             width="1728" height="1033"
+                             alt="Изображение производства">
+                    </picture>
+                </div>
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Civil <strong>Engineering Solutions</strong> For The <strong>Cement</strong> Industry
+                    </h1>
+                    <p class="hero__description">
+                        We&nbsp;are your leading partner for complex brownfield construction projects during ongoing
+                        operation.
+                    </p>
+                    <p class="hero__description">
+                        Benefit from engineering excellence built on&nbsp;more than 30&nbsp;years of&nbsp;industry
+                        experience.
+                    </p>
+                    <div class="hero__quality-mobile">
+                        <span class="hero__quality">Agil.</span>
+                        <span class="hero__quality">Ganzheitlich.</span>
+                        <span class="hero__quality">Zuverlässig.</span>
+                    </div>
+                    <div class="hero__block-btn">
+                        <button class="hero__btn btn btn--hero">How can we&nbsp;serve you</button>
+                        <button class="hero__btn btn btn--color">Contact&nbsp;Us</button>
+                    </div>
+                </div>
+                <div class="hero__decor">
+                    <div class="hero__decor-item hero__quality">
+                        <div class="hero__quality-item-wrapper">
+                            <span class="hero__quality-item-name">Agil.</span>
+                        </div>
+                    </div>
+                    <div class="hero__decor-item hero__quality">
+                        <div class="hero__quality-item-wrapper">
+                            <span class="hero__quality-item-name">Ganzheitlich.</span>
+                        </div>
+                    </div>
+                    <div class="hero__decor-item hero__quality">
+                        <div class="hero__quality-item-wrapper">
+                            <span class="hero__quality-item-name">Zuverlässig.</span>
+                        </div>
+                    </div>
+                    <div class="hero__decor-item">
+                        <div class="hero__quality-item-wrapper">
+                            <span class="hero__quality-item-name"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <!--        <div class="container">-->
+        <div class="services__wrapper">
+            <div class="services__text-block">
+                <h2 class="services__title">Comprehensive Structural Engineering Services</h2>
+                <p class="services__description">
+                    We&nbsp;accompany you from the first idea of&nbsp;your next construction project from the first idea
+                    to&nbsp;successful execution.
+                </p>
+            </div>
+            <div class="services__decor-block decor-block">
+                <div class="decor-block__inner">
+                    <div class="decor-block__fon-inner decor-block__fon-inner--left">
+                        <div class="decor-block__fon-img"></div>
+                    </div>
+                    <ul class="decor-block__list">
+                        <li class="decor-block__item">
+                            <div class="decor-block__item-inner">
+                                <span class="decor-block__text">Project consulting</span>
+                                <svg class="decor-block__icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="decor-block__item">
+                            <div class="decor-block__item-inner">
+                                <span class="decor-block__text">Location analysis and feasibility studies</span>
+                                <svg class="decor-block__icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="decor-block__item">
+                            <div class="decor-block__item-inner">
+                                <span class="decor-block__text">Structural design and execution planning</span>
+                                <svg class="decor-block__icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="decor-block__item">
+                            <div class="decor-block__item-inner">
+                                <span class="decor-block__text">Preparation of contract award</span>
+                                <svg class="decor-block__icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="decor-block__item">
+                            <div class="decor-block__item-inner">
+                                <span class="decor-block__text">Service and Support</span>
+                                <svg class="decor-block__icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="decor-block__item">
+                            <div class="decor-block__item-inner">
+                                <span class="decor-block__text">Construction site consulting</span>
+                                <svg class="decor-block__icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="decor-block__fon-inner decor-block__fon-inner--right">
+                        <div class="decor-block__fon-img"></div>
+                    </div>
+                    <div class="decor-block__fon-inner decor-block__fon-inner--center">
+                        <div class="decor-block__fon-img"></div>
+                    </div>
+                </div>
+            </div>
+            <a class="services__scroll-link scroll-link" href="#expertise">
+                        <span class="scroll-link__text">
+                            Scroll to&nbsp;find out how our expertise can help you
+                        </span>
+                <svg class="scroll-link__icon" width="33" height="17" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#scroll-btn-icon"></use>
+                </svg>
+            </a>
+        </div>
+        <!--        </div>-->
+    </section>
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="expertise__wrapper">
+                <div class="expertise__top">
+                    <h2 class="expertise__title">Broad expertise based on&nbsp;decades of&nbsp;experience</h2>
+                    <p class="expertise__description">
+                        Our services include all types of&nbsp;construction projects that you encounter.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper expertise__swiper expert-block">
+                <div class="expert-block__wrapper swiper-wrapper">
+                    <div class="expert-block__slide swiper-slide">
+                        <a class="expert-block__slide-link" href="#">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/expertise/expert-block.webp 1x, images/expertise/expert-block@2x.webp 2x">
+                                <img class="expert-block__slide-img" src="images/expertise/expert-block.jpg"
+                                     srcset="images/expertise/expert-block@2x.jpg 2x"
+                                     width="288" height="489"
+                                     alt="Изображение производства">
+                            </picture>
+                            <div class="expert-block__slide-num">
+                                <svg class="expert-block__slide-icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                            <h3 class="expert-block__slide-title">Civil engineering</h3>
+                        </a>
+                    </div>
+                    <div class="expert-block__slide swiper-slide">
+                        <a class="expert-block__slide-link" href="#">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/expertise/expert-block.webp 1x, images/expertise/expert-block@2x.webp 2x">
+                                <img class="expert-block__slide-img" src="images/expertise/expert-block.jpg"
+                                     srcset="images/expertise/expert-block@2x.jpg 2x"
+                                     width="288" height="489"
+                                     alt="Изображение производства">
+                            </picture>
+                            <div class="expert-block__slide-num">
+                                <svg class="expert-block__slide-icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                            <h3 class="expert-block__slide-title">Machine and building foundations</h3>
+                        </a>
+                    </div>
+                    <div class="expert-block__slide swiper-slide">
+                        <a class="expert-block__slide-link" href="#">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/expertise/expert-block.webp 1x, images/expertise/expert-block@2x.webp 2x">
+                                <img class="expert-block__slide-img" src="images/expertise/expert-block.jpg"
+                                     srcset="images/expertise/expert-block@2x.jpg 2x"
+                                     width="288" height="489"
+                                     alt="Изображение производства">
+                            </picture>
+                            <div class="expert-block__slide-num">
+                                <svg class="expert-block__slide-icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                            <h3 class="expert-block__slide-title">Silo and slipform construction</h3>
+                        </a>
+                    </div>
+                    <div class="expert-block__slide swiper-slide">
+                        <a class="expert-block__slide-link" href="#">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/expertise/expert-block.webp 1x, images/expertise/expert-block@2x.webp 2x">
+                                <img class="expert-block__slide-img" src="images/expertise/expert-block.jpg"
+                                     srcset="images/expertise/expert-block@2x.jpg 2x"
+                                     width="288" height="489"
+                                     alt="Изображение производства">
+                            </picture>
+                            <div class="expert-block__slide-num">
+                                <svg class="expert-block__slide-icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                            <h3 class="expert-block__slide-title">Assesments, building inspection, concrete maintenance
+                                and repair</h3>
+                        </a>
+                    </div>
+                    <div class="expert-block__slide swiper-slide">
+                        <a class="expert-block__slide-link" href="#">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/expertise/expert-block.webp 1x, images/expertise/expert-block@2x.webp 2x">
+                                <img class="expert-block__slide-img" src="images/expertise/expert-block.jpg"
+                                     srcset="images/expertise/expert-block@2x.jpg 2x"
+                                     width="288" height="489"
+                                     alt="Изображение производства">
+                            </picture>
+                            <div class="expert-block__slide-num">
+                                <svg class="expert-block__slide-icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                            <h3 class="expert-block__slide-title">International cement factory construction</h3>
+                        </a>
+                    </div>
+                    <div class="expert-block__slide swiper-slide">
+                        <a class="expert-block__slide-link" href="#">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/expertise/expert-block.webp 1x, images/expertise/expert-block@2x.webp 2x">
+                                <img class="expert-block__slide-img" src="images/expertise/expert-block.jpg"
+                                     srcset="images/expertise/expert-block@2x.jpg 2x"
+                                     width="288" height="489"
+                                     alt="Изображение производства">
+                            </picture>
+                            <div class="expert-block__slide-num">
+                                <svg class="expert-block__slide-icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                            <h3 class="expert-block__slide-title">Construction in ongoing operations</h3>
+                        </a>
+                    </div>
+                    <div class="expert-block__slide swiper-slide">
+                        <a class="expert-block__slide-link" href="#">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/expertise/expert-block.webp 1x, images/expertise/expert-block@2x.webp 2x">
+                                <img class="expert-block__slide-img" src="images/expertise/expert-block.jpg"
+                                     srcset="images/expertise/expert-block@2x.jpg 2x"
+                                     width="288" height="489"
+                                     alt="Изображение производства">
+                            </picture>
+                            <div class="expert-block__slide-num">
+                                <svg class="expert-block__slide-icon" width="17" height="17" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                </svg>
+                            </div>
+                            <h3 class="expert-block__slide-title">Silo and slipform construction</h3>
+                        </a>
+                    </div>
+                </div>
+                <!--                <div class="expertise__swiper-pagination swiper-pagination"></div>-->
+            </div>
+            <div class="navigation">
+                <div class="navigation__block">
+                    <button class="navigation__btn navigation__btn--prev">
+                        <svg class="navigation__btn-icon" width="20" height="25" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow-prev-icon"></use>
+                        </svg>
+                    </button>
+                    <button class="navigation__btn navigation__btn--next">
+                        <svg class="navigation__btn-icon" width="20" height="25" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow-next-icon"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefit">
+        <div class="container">
+            <div class="benefit__wrapper">
+                <div class="benefit__top">
+                    <h2 class="benefit__title">Benefit from Decades of&nbsp;Life Cycle Know How</h2>
+                    <p class="benefit__description">
+                        Our decade-long permanent presence on&nbsp;cement plants helps&nbsp;us to&nbsp;design buildings
+                        today that will be&nbsp;ready for whatever tomorrow brings. With our comprehensive planning
+                        methodology and building life cycle experience we&nbsp;anticipate use changes, unexpected
+                        utilisation and lifetime expositions early on&nbsp;during planning. This
+                        allows&nbsp;us to&nbsp;design buildings that are flexible, long-lasting, and economically
+                        efficient.
+                    </p>
+                </div>
+                <div class="benefit__slider-block slider-block">
+                    <div class="slider-block__thumbs-wrapper">
+                        <!--                        <div class="slider-block__thumbs-slider thumbs-slider">-->
+
+                        <div thumbsSlider="" class="slider-block__thumbs-slider thumbs-slider swiper benefit__swiper">
+                            <div class="thumbs-slider__wrapper swiper-wrapper">
+                                <div class="thumbs-slider__slide swiper-slide">
+                                    <button class="thumbs-slider__slide-btn">
+                                            <span class="thumbs-slider__slide-num">
+                                                <svg class="thumbs-slider__slide-icon" width="17" height="17"
+                                                     aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                                </svg>
+                                            </span>
+                                        <span class="thumbs-slider__slide-title">
+                                            Comprehensive planning methodology includes life-cycle know how
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="thumbs-slider__slide swiper-slide">
+                                    <button class="thumbs-slider__slide-btn">
+                                            <span class="thumbs-slider__slide-num">
+                                                <svg class="thumbs-slider__slide-icon" width="17" height="17"
+                                                     aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                                </svg>
+                                            </span>
+                                        <span class="thumbs-slider__slide-title">
+                                            Greenfield. Brownfield. Ongoing Operation.
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="thumbs-slider__slide swiper-slide">
+                                    <button class="thumbs-slider__slide-btn">
+                                            <span class="thumbs-slider__slide-num">
+                                                <svg class="thumbs-slider__slide-icon" width="17" height="17"
+                                                     aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                                </svg>
+                                            </span>
+                                        <span class="thumbs-slider__slide-title">
+                                            Reuse, rebuild, extend
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="thumbs-slider__slide swiper-slide">
+                                    <button class="thumbs-slider__slide-btn">
+                                            <span class="thumbs-slider__slide-num">
+                                                <svg class="thumbs-slider__slide-icon" width="17" height="17"
+                                                     aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                                </svg>
+                                            </span>
+                                        <span class="thumbs-slider__slide-title">
+                                            Renovate, refurbish, revamp
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="thumbs-slider__slide swiper-slide">
+                                    <button class="thumbs-slider__slide-btn">
+                                            <span class="thumbs-slider__slide-num">
+                                                <svg class="thumbs-slider__slide-icon" width="17" height="17"
+                                                     aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#plus-icon"></use>
+                                                </svg>
+                                            </span>
+                                        <span class="thumbs-slider__slide-title">
+                                            Demolition
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-block__thumbs-nav thumbs-nav">
+                            <div class="thumbs-nav__btn thumbs-nav__btn--prev swiper-button-prev"></div>
+                            <div class="thumbs-nav__btn thumbs-nav__btn--next swiper-button-next"></div>
+                        </div>
+
+                        <!--                        </div>-->
+                    </div>
+                    <div class="slider-block__main-slider main-slider swiper benefit__swiper2"
+                         style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+                        <div class="main-slider__wrapper swiper-wrapper">
+                            <div class="main-slider__slide swiper-slide">
+                                <div class="main-slider__img">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="images/benefit/benefit-swiper.webp 1x, images/benefit/benefit-swiper@2x.webp 2x">
+                                        <img class="main-slider__image" src="images/benefit/benefit-swiper.jpg"
+                                             srcset="images/benefit/benefit-swiper@2x.jpg 2x"
+                                             width="936" height="558"
+                                             alt="Изображение производства">
+                                    </picture>
+                                </div>
+                                <div class="main-slider__content">
+                                    <h3 class="main-slider__title">Comprehensive planning methodology includes
+                                        life-cycle know how</h3>
+                                    <p class="main-slider__description">
+                                        Our decade-long permanent presence on&nbsp;cement plants allows&nbsp;us to&nbsp;anticipate
+                                        use changes, unexpected utilisation and lifetime expositions early on&nbsp;during
+                                        planning. This allows&nbsp;us to&nbsp;design buildings that are flexible,
+                                        long-lasting and economically efficient.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <div class="main-slider__img">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="images/benefit/benefit-swiper.webp 1x, images/benefit/benefit-swiper@2x.webp 2x">
+                                        <img class="main-slider__image" src="images/benefit/benefit-swiper.jpg"
+                                             srcset="images/benefit/benefit-swiper@2x.jpg 2x"
+                                             width="936" height="558"
+                                             alt="Изображение производства">
+                                    </picture>
+                                </div>
+                                <div class="main-slider__content">
+                                    <h3 class="main-slider__title">Comprehensive planning methodology includes
+                                        life-cycle know how</h3>
+                                    <p class="main-slider__description">
+                                        Our decade-long permanent presence on&nbsp;cement plants allows&nbsp;us to&nbsp;anticipate
+                                        use changes, unexpected utilisation and lifetime expositions early on&nbsp;during
+                                        planning. This allows&nbsp;us to&nbsp;design buildings that are flexible,
+                                        long-lasting and economically efficient.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <div class="main-slider__img">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="images/benefit/benefit-swiper.webp 1x, images/benefit/benefit-swiper@2x.webp 2x">
+                                        <img class="main-slider__image" src="images/benefit/benefit-swiper.jpg"
+                                             srcset="images/benefit/benefit-swiper@2x.jpg 2x"
+                                             width="936" height="558"
+                                             alt="Изображение производства">
+                                    </picture>
+                                </div>
+                                <div class="main-slider__content">
+                                    <h3 class="main-slider__title">Comprehensive planning methodology includes
+                                        life-cycle know how</h3>
+                                    <p class="main-slider__description">
+                                        Our decade-long permanent presence on&nbsp;cement plants allows&nbsp;us to&nbsp;anticipate
+                                        use changes, unexpected utilisation and lifetime expositions early on&nbsp;during
+                                        planning. This allows&nbsp;us to&nbsp;design buildings that are flexible,
+                                        long-lasting and economically efficient.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <div class="main-slider__img">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="images/benefit/benefit-swiper.webp 1x, images/benefit/benefit-swiper@2x.webp 2x">
+                                        <img class="main-slider__image" src="images/benefit/benefit-swiper.jpg"
+                                             srcset="images/benefit/benefit-swiper@2x.jpg 2x"
+                                             width="936" height="558"
+                                             alt="Изображение производства">
+                                    </picture>
+                                </div>
+                                <div class="main-slider__content">
+                                    <h3 class="main-slider__title">Comprehensive planning methodology includes
+                                        life-cycle know how</h3>
+                                    <p class="main-slider__description">
+                                        Our decade-long permanent presence on&nbsp;cement plants allows&nbsp;us to&nbsp;anticipate
+                                        use changes, unexpected utilisation and lifetime expositions early on&nbsp;during
+                                        planning. This allows&nbsp;us to&nbsp;design buildings that are flexible,
+                                        long-lasting and economically efficient.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <div class="main-slider__img">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="images/benefit/benefit-swiper.webp 1x, images/benefit/benefit-swiper@2x.webp 2x">
+                                        <img class="main-slider__image" src="images/benefit/benefit-swiper.jpg"
+                                             srcset="images/benefit/benefit-swiper@2x.jpg 2x"
+                                             width="936" height="558"
+                                             alt="Изображение производства">
+                                    </picture>
+                                </div>
+                                <div class="main-slider__content">
+                                    <h3 class="main-slider__title">Comprehensive planning methodology includes
+                                        life-cycle know how</h3>
+                                    <p class="main-slider__description">
+                                        Our decade-long permanent presence on&nbsp;cement plants allows&nbsp;us to&nbsp;anticipate
+                                        use changes, unexpected utilisation and lifetime expositions early on&nbsp;during
+                                        planning. This allows&nbsp;us to&nbsp;design buildings that are flexible,
+                                        long-lasting and economically efficient.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-block__pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="players">
+        <div class="container">
+            <div class="players__wrapper">
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.main-nav {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 1025px) {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $color-white;
+    transition: color $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-chocolate;
+    }
+
+    @media (max-width: 1290px) {
+      font-size: 13px;
+      line-height: 16px;
+    }
+
+    @media (max-width: 1025px) {
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 0.8;
+      letter-spacing: 0.01em;
+
+      &:hover,
+      &:focus-visible {
+        color: $color-sapphire;
+      }
+    }
+  }
+}

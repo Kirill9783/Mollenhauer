@@ -1,0 +1,21 @@
+.swiper {
+  //overflow: visible;
+
+  &-pagination-bullet-active {
+    background-color: $color-coral;
+  }
+
+  &-button-disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+
+  &-slide-thumb-active .thumbs-slider__slide-btn {
+    opacity: 1;
+  }
+
+  &-button-next::after,
+  &-button-prev::after {
+    font-size: 20px;
+  }
+}
