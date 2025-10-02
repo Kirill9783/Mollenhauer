@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  //min-height: 100vh;
   padding: 280px 0 350px;
   overflow: hidden;
   
@@ -10,10 +9,6 @@
 
   @media (max-width: 768px) {
     padding: 142px 0 61px;
-  }
-
-  &__wrapper {
-    //padding: 138px 0 100px;
   }
 
   &__picture {

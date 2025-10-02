@@ -1,9 +1,5 @@
 .main-slider {
 
-  &__wrapper {
-
-  }
-
   &__slide {
     display: flex;
     align-items: stretch;
@@ -37,6 +33,7 @@
     flex-direction: column;
     justify-content: end;
     padding: 240px 90px 52px 20px;
+    align-self: start;
 
     @media (max-width: 1290px) {
       padding: 160px 0 0 10px;

@@ -1,0 +1,150 @@
+.realization {
+  padding: 100px 0 80px;
+
+  @media (max-width: 1024px) {
+    padding: 30px 0 30px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 20px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(4, 1fr);
+    gap: 55px 80px;
+
+    @media (max-width: 1290px) {
+      grid-template: repeat(2, auto) / repeat(3, 1fr);
+    }
+
+    @media (max-width: 1024px) {
+      gap: 60px 40px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template: auto / 1fr;
+      gap: 40px;
+    }
+  }
+
+  &__left {
+    position: relative;
+    padding-bottom: 35px;
+
+    &-qualities {
+      font-size: 18px;
+      line-height: 130%;
+      letter-spacing: .02em;
+      color: $color-ebony;
+      margin: 0 0 20px;
+      display: inline-block;
+
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
+    }
+
+    &-title {
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: -.03em;
+      color: $color-chocolate;
+      margin: 0;
+
+      @media (max-width: 1024px) {
+        font-size: 30px;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: $color-chocolate;
+      width: 35px;
+      height: 20px;
+    }
+  }
+
+  &__middle {
+    columns: 2;
+    grid-column: 2 / span 2;
+    gap: 39px;
+    padding-top: 45px;
+
+    @media (max-width: 1024px) {
+      columns: auto;
+    }
+
+    @media (max-width: 768px) {
+      grid-column: 1;
+      padding-top: 0;
+    }
+  }
+
+  &__description {
+    color: $color-blackcurrant;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+
+    &:first-child {
+      margin: 0 0 17px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    grid-row: 2 / 3;
+    grid-column: 2 / span 3;
+
+    @media (max-width: 1290px) {
+      grid-column: 1 / span 3;
+    }
+
+    @media (max-width: 1024px) {
+      gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template: auto / 1fr;
+      grid-row: auto;
+      grid-column: 1;
+    }
+  }
+
+  &__steps {
+
+    &-title {
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 120%;
+      letter-spacing: -.035em;
+      color: $color-night-rider;
+      margin: 0 0 25px;
+      max-width: 170px;
+
+      @media (max-width: 768px) {
+        font-size: 26px;
+        line-height: 100%;
+        max-width: fit-content;
+      }
+    }
+
+    &-description {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: .02em;
+      color: $color-regent-grey;
+      margin: 0;
+    }
+  }
+}

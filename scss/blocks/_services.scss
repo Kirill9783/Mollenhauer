@@ -21,9 +21,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1728px;
-    //min-height: 65vh;
     min-height: clamp(890px, 65vw, 1128px);
-    //padding: 83px 120px 0;
     padding: clamp(50px,5.78vw,100px) clamp(45px,8.39vw,145px) 0;
 
     @media (max-width: 768px) {

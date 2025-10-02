@@ -1,3 +1,103 @@
 .players {
   padding: 100px 0 80px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    margin: 0 0 30px;
+    letter-spacing: -0.03em;
+    color: $color-black;
+    max-width: 370px;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      max-width: 330px;
+    }
+
+    @media (max-width: 420px) {
+      margin: 0 0 55px;
+    }
+  }
+
+  &__slider {
+
+    &-inner {
+      position: relative;
+    }
+  }
+
+  &__slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    overflow: hidden;
+
+    @media (max-width: 490px) {
+      height: 33.33333%;
+      padding: 15px;
+    }
+  }
+
+  .players__slide.swiper-slide-active::after,
+  .players__slide.swiper-slide-next + .players__slide::after,
+  .players__slide.swiper-slide-next::after {
+
+    @media (min-width: 491px) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: url("/images/benefit/benefit-line.png") right top / 100% 100% no-repeat;
+    }
+  }
+
+  &__pagination {
+    display: none;
+
+    @media (max-width: 1024px) {
+      display: block;
+      position: absolute;
+      text-align: center;
+      margin: 0 0 -80px;
+    }
+
+    @media (max-width: 490px) {
+      margin: 0 0 -50px;
+    }
+  }
+
+  &__btn-slide {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    z-index: 1;
+    
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &__btn-icon {
+    width: 24px;
+    height: 24px;
+    color: $color-tuna;
+  }
 }

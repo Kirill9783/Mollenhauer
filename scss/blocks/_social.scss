@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  gap: 16px;
+
+  &__link {
+    width: 40px;
+    height: 40px;
+    color: $color-coral;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    border: 1px solid $color-coral;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: color $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-chocolate;
+    }
+  }
+}
